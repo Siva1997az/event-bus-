@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <two-tag></two-tag>
+    <five-tag></five-tag>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Two from './components/Two.vue'
+import Five from './components/Five.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'two-tag':Two,
+    'five-tag':Five
+  },
+  created() {
+     
+  },
+  mounted() {
+
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
